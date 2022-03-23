@@ -1,0 +1,23 @@
+/**
+
+@mainpage Assignment 1 (P2)
+
+@authors João Cruz 92930\n Soraia Souto 93308\n Ana Luísa XXXX
+
+Here you should describe the app: what is the purpose, how to use,
+special rules, restrictions, ...
+Also bugs should be listed here.
+In summary, anything that you think a user needs to know should go here.
+*/
+
+/** \file fileName.ext
+* \brief Brief file description
+* Can use several lines
+*
+* After one blank line follows the detailed description
+* which can span through several lines
+*
+* \author Author Info. There can be several \author entries
+* \date Date
+* \bug There are no bugs
+*/
