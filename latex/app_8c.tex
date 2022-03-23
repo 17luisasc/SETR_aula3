@@ -1,0 +1,62 @@
+\hypertarget{app_8c}{}\doxysection{app.\+c File Reference}
+\label{app_8c}\index{app.c@{app.c}}
+
+
+It fills an array with integers chosen by the user and the array has a size also chosen by the user. Then it calls functions that give information about the array and about what it contains.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}my\+SAG.\+h\char`\"{}}\newline
+Include dependency graph for app.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{app_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em It fills an array with integers chosen by the user and the array has a size also chosen by the user. Then it calls functions that give information about the array and about what it contains. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{app_8c_ac6ccc92c23f22d3eb15d31e8bfb6da8c}\label{app_8c_ac6ccc92c23f22d3eb15d31e8bfb6da8c}} 
+int {\bfseries stream} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+It fills an array with integers chosen by the user and the array has a size also chosen by the user. Then it calls functions that give information about the array and about what it contains. 
+
+\mbox{\hyperlink{app_8c}{app.\+c}} is the file that contains the \mbox{\hyperlink{app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}} function.
+
+\begin{DoxyAuthor}{Author}
+Ana Luísa Coelho 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 March 2022 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]Not tested yet. \end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{app_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{app_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{app.c@{app.c}!main@{main}}
+\index{main@{main}!app.c@{app.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+It fills an array with integers chosen by the user and the array has a size also chosen by the user. Then it calls functions that give information about the array and about what it contains. 
+
+It is asked to the user what is the size that they want to give to the array. If it is to big it to fit the size of the array, it asks for a new size. Then it asks for values to fill the array. After that User can chose a mode, acordingly with what they want to know about the array. Mode 1\+: the User chooses a new value to add to the array; Mode 2\+: returns the max value of the array; Mode 3\+: returns the min value of the array; Mode 4\+: returns the average of the array; After the choice of the User, the programme is terminated. (there\textquotesingle{}s only one oportunity for the user to choose)
+
+\begin{DoxyReturn}{Returns}
+Returns 0 
+\end{DoxyReturn}

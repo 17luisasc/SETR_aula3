@@ -1,0 +1,6 @@
+<map id="app.c" name="app.c">
+<area shape="rect" id="node1" title="It fills an array with integers chosen by the user and the array has a size also chosen by the user...." alt="" coords="95,5,150,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,80,155,107"/>
+<area shape="rect" id="node4" href="$mySAG_8h.html" title="mySAG is module that computes integers from a stream." alt="" coords="179,80,258,107"/>
+</map>

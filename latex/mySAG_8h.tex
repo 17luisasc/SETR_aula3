@@ -1,0 +1,150 @@
+\hypertarget{mySAG_8h}{}\doxysection{my\+SAG.\+h File Reference}
+\label{mySAG_8h}\index{mySAG.h@{mySAG.h}}
+
+
+my\+SAG is module that computes integers from a stream.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{mySAG_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mySAG_8h_a0f3d4c283b65ac16490955a6a9887881}{My\+SAGInit}} (int size)
+\begin{DoxyCompactList}\small\item\em Init the module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mySAG_8h_a9113f1f4f43d47bd6ba54bc18e7b7324}{My\+SAGInsert}} (int size)
+\begin{DoxyCompactList}\small\item\em Adds an element to the stream. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mySAG_8h_a98b14d8f9feeff08435cc04cf8ec22dd}{My\+SAGMax}} ()
+\begin{DoxyCompactList}\small\item\em Returns the maximum value of the stream window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mySAG_8h_a3cb8f994b3d6881fbaa4d706971f9bb3}{My\+SAGMin}} ()
+\begin{DoxyCompactList}\small\item\em Returns the minimum value of the stream window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mySAG_8h_a51c7479755a520d379bd8d064b0220d6}{My\+SAGAvg}} ()
+\begin{DoxyCompactList}\small\item\em Returns the average of the values of the stream window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mySAG_8h_a5c1e6f4d2f41856a3323bb13ab343030}{My\+SAGFreq}} ()
+\begin{DoxyCompactList}\small\item\em It should return the number of times that a given value, passed as argument, exists in the stream window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mySAG_8h_ac6ccc92c23f22d3eb15d31e8bfb6da8c}\label{mySAG_8h_ac6ccc92c23f22d3eb15d31e8bfb6da8c}} 
+int {\bfseries stream} \mbox{[}50\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+my\+SAG is module that computes integers from a stream. 
+
+This module is composed by 6 functions, with the purpose of computing aggregated values from a stream. The array with the values from the stream, which is entitled \char`\"{}stream\char`\"{}, is inicialized as an extern global variable.
+
+\begin{DoxyAuthor}{Author}
+Ana Luísa Coelho \begin{DoxyVerb}* This is my email:luisasc@ua.pt
+* \end{DoxyVerb}
+ 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22 March 2022 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]It was not tested yet. \end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mySAG_8h_a51c7479755a520d379bd8d064b0220d6}\label{mySAG_8h_a51c7479755a520d379bd8d064b0220d6}} 
+\index{mySAG.h@{mySAG.h}!MySAGAvg@{MySAGAvg}}
+\index{MySAGAvg@{MySAGAvg}!mySAG.h@{mySAG.h}}
+\doxysubsubsection{\texorpdfstring{MySAGAvg()}{MySAGAvg()}}
+{\footnotesize\ttfamily int My\+SAGAvg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the average of the values of the stream window. 
+
+This function calculates the average (rounded to an int) of all the values that the array contains. \begin{DoxyReturn}{Returns}
+It returns the average (int). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mySAG_8h_a5c1e6f4d2f41856a3323bb13ab343030}\label{mySAG_8h_a5c1e6f4d2f41856a3323bb13ab343030}} 
+\index{mySAG.h@{mySAG.h}!MySAGFreq@{MySAGFreq}}
+\index{MySAGFreq@{MySAGFreq}!mySAG.h@{mySAG.h}}
+\doxysubsubsection{\texorpdfstring{MySAGFreq()}{MySAGFreq()}}
+{\footnotesize\ttfamily int My\+SAGFreq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It should return the number of times that a given value, passed as argument, exists in the stream window. 
+
+It was not developed. \begin{DoxyReturn}{Returns}
+In this case returns 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mySAG_8h_a0f3d4c283b65ac16490955a6a9887881}\label{mySAG_8h_a0f3d4c283b65ac16490955a6a9887881}} 
+\index{mySAG.h@{mySAG.h}!MySAGInit@{MySAGInit}}
+\index{MySAGInit@{MySAGInit}!mySAG.h@{mySAG.h}}
+\doxysubsubsection{\texorpdfstring{MySAGInit()}{MySAGInit()}}
+{\footnotesize\ttfamily int My\+SAGInit (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Init the module. 
+
+It evaluates if the array size chosen by the user is lesser or greater the array size that was given in the code. If it\textquotesingle{}s lesser than the size given in the code, it returns one, telling the array has enough positions to fill. If it\textquotesingle{}s greater, it return zero, meaning there\textquotesingle{}s not enough space in the array. 
+\begin{DoxyParams}{Parameters}
+{\em size} & This integer parameter is the size of the array chosen by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This function returns 0 or 1 as mentioned before. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mySAG_8h_a9113f1f4f43d47bd6ba54bc18e7b7324}\label{mySAG_8h_a9113f1f4f43d47bd6ba54bc18e7b7324}} 
+\index{mySAG.h@{mySAG.h}!MySAGInsert@{MySAGInsert}}
+\index{MySAGInsert@{MySAGInsert}!mySAG.h@{mySAG.h}}
+\doxysubsubsection{\texorpdfstring{MySAGInsert()}{MySAGInsert()}}
+{\footnotesize\ttfamily void My\+SAGInsert (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Adds an element to the stream. 
+
+This function adds an element to the array, directly from the terminal. It appears a message in the terminal a message asking the user to chose ~\newline
+ an integer to fill it. 
+\begin{DoxyParams}{Parameters}
+{\em size} & This integer parameter is the size of the array chosen by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+It doesn\textquotesingle{}t return anything. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mySAG_8h_a98b14d8f9feeff08435cc04cf8ec22dd}\label{mySAG_8h_a98b14d8f9feeff08435cc04cf8ec22dd}} 
+\index{mySAG.h@{mySAG.h}!MySAGMax@{MySAGMax}}
+\index{MySAGMax@{MySAGMax}!mySAG.h@{mySAG.h}}
+\doxysubsubsection{\texorpdfstring{MySAGMax()}{MySAGMax()}}
+{\footnotesize\ttfamily int My\+SAGMax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the maximum value of the stream window. 
+
+This function goes through all the values of the array and finds the maximum value. 
+\begin{DoxyParams}{Parameters}
+{\em size} & This integer parameter is the size of the array chosen by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+It returns maximum value of the array (int). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mySAG_8h_a3cb8f994b3d6881fbaa4d706971f9bb3}\label{mySAG_8h_a3cb8f994b3d6881fbaa4d706971f9bb3}} 
+\index{mySAG.h@{mySAG.h}!MySAGMin@{MySAGMin}}
+\index{MySAGMin@{MySAGMin}!mySAG.h@{mySAG.h}}
+\doxysubsubsection{\texorpdfstring{MySAGMin()}{MySAGMin()}}
+{\footnotesize\ttfamily int My\+SAGMin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the minimum value of the stream window. 
+
+This function goes through all the values of the array and finds the minimum value. \begin{DoxyReturn}{Returns}
+It returns minimum value of the array (int). 
+\end{DoxyReturn}
