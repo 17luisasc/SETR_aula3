@@ -12,11 +12,10 @@ int MySAGInit(int size)
 		return 0;
 }
 
-int * MySAGInsert(int size)
+void  MySAGInsert(int size)
 {
 	printf("Insert a new integer for array: ");
 	scanf(%d, &stream[size+2]);
-	return  stream;
 }
 
 int MySAGMax()
