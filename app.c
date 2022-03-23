@@ -1,7 +1,13 @@
+#include "mySAG.h"
 
 
-int main(void)
+int main()
 {
-
-    return 0;
+	int size=0, i=0;
+	printf("Enter size of array: ");
+	scanf(%d, &size);
+	for(i=0, i<size-1, i++)
+	{
+		scanf(%d, );
+	}
 }
